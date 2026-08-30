@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="80 60 640 480" width="640" height="480" role="img" aria-label="ice cream">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff9f4"/>
+      <stop offset="100%" stop-color="#dad3ce"/>
+    </linearGradient>
+    <radialGradient id="foodGrad" cx="35%" cy="28%" r="78%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f8e9d9"/>
+      <stop offset="100%" stop-color="#d4c5b5"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx="50%" cy="45%" r="72%">
+      <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#3a2417" stop-opacity=".22"/>
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="800" height="600" fill="url(#bgGrad)"/>
+  <circle cx="128" cy="122" r="52" fill="#ffffff" opacity=".38"/>
+  <circle cx="692" cy="162" r="30" fill="#ffffff" opacity=".3"/>
+  <circle cx="648" cy="96" r="14" fill="#e5a06a" opacity=".38"/>
+  <circle cx="124" cy="496" r="22" fill="#e5a06a" opacity=".3"/>
+  <ellipse cx="400" cy="520" rx="330" ry="66" fill="#c3bcb7"/>
+  
+      <g>
+        <ellipse cx="400" cy="512" rx="130" ry="26" fill="#000" opacity=".14"/>
+        <path d="M312 210 L488 210 L466 486 Q464 504 446 504 L354 504 Q336 504 334 486 Z" fill="#ffffff" opacity=".55"/>
+        <path d="M322 246 L478 246 L458 478 Q457 492 442 492 L358 492 Q343 492 342 478 Z" fill="url(#foodGrad)"/>
+        <ellipse cx="400" cy="246" rx="78" ry="18" fill="#ffffff"/>
+        <ellipse cx="400" cy="238" rx="62" ry="14" fill="#ffffff" opacity=".8"/>
+        <circle cx="400" cy="226" r="16" fill="#e5a06a"/>
+        <rect x="428" y="150" width="16" height="130" rx="8" fill="#e5a06a" transform="rotate(12 436 215)"/>
+        <path d="M312 210 L488 210" stroke="#ffffff" stroke-width="8" opacity=".8" stroke-linecap="round"/>
+        <path d="M348 300 L348 460" stroke="#ffffff" stroke-width="12" opacity=".35" stroke-linecap="round"/>
+      </g>
+  <rect x="0" y="0" width="800" height="600" fill="url(#vignette)"/>
+</svg>

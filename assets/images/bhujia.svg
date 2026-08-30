@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="80 60 640 480" width="640" height="480" role="img" aria-label="bhujia">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff9e9"/>
+      <stop offset="100%" stop-color="#dcd3c3"/>
+    </linearGradient>
+    <radialGradient id="foodGrad" cx="35%" cy="28%" r="78%">
+      <stop offset="0%" stop-color="#ffd56a"/>
+      <stop offset="60%" stop-color="#eaa73c"/>
+      <stop offset="100%" stop-color="#c68318"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx="50%" cy="45%" r="72%">
+      <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#3a2417" stop-opacity=".22"/>
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="800" height="600" fill="url(#bgGrad)"/>
+  <circle cx="128" cy="122" r="52" fill="#ffffff" opacity=".38"/>
+  <circle cx="692" cy="162" r="30" fill="#ffffff" opacity=".3"/>
+  <circle cx="648" cy="96" r="14" fill="#c67a1f" opacity=".38"/>
+  <circle cx="124" cy="496" r="22" fill="#c67a1f" opacity=".3"/>
+  <ellipse cx="400" cy="520" rx="330" ry="66" fill="#c5bcac"/>
+  
+      <g transform="translate(392 316) rotate(-10)">
+        <rect x="-128" y="-34" width="256" height="68" rx="34" fill="#000" opacity=".12" transform="translate(0 14)"/>
+        <rect x="-128" y="-34" width="256" height="68" rx="34" fill="url(#foodGrad)" stroke="#bc790e" stroke-width="3"/>
+        <path d="M-84 -34 L-56 34 M-24 -34 L4 34 M36 -34 L64 34" stroke="#c67a1f" stroke-width="8" opacity=".5" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(408 414) rotate(7)">
+        <rect x="-128" y="-34" width="256" height="68" rx="34" fill="#000" opacity=".12" transform="translate(0 14)"/>
+        <rect x="-128" y="-34" width="256" height="68" rx="34" fill="url(#foodGrad)" stroke="#bc790e" stroke-width="3"/>
+        <path d="M-84 -34 L-56 34 M-24 -34 L4 34 M36 -34 L64 34" stroke="#c67a1f" stroke-width="8" opacity=".5" stroke-linecap="round"/>
+      </g>
+  <rect x="0" y="0" width="800" height="600" fill="url(#vignette)"/>
+</svg>

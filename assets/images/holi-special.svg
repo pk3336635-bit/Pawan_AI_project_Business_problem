@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="80 60 640 480" width="640" height="480" role="img" aria-label="holi special">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff5fa"/>
+      <stop offset="100%" stop-color="#dccfd4"/>
+    </linearGradient>
+    <radialGradient id="foodGrad" cx="35%" cy="28%" r="78%">
+      <stop offset="0%" stop-color="#ff7dba"/>
+      <stop offset="60%" stop-color="#d94f8c"/>
+      <stop offset="100%" stop-color="#b52b68"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx="50%" cy="45%" r="72%">
+      <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#3a2417" stop-opacity=".22"/>
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="800" height="600" fill="url(#bgGrad)"/>
+  <circle cx="128" cy="122" r="52" fill="#ffffff" opacity=".38"/>
+  <circle cx="692" cy="162" r="30" fill="#ffffff" opacity=".3"/>
+  <circle cx="648" cy="96" r="14" fill="#5aa7c9" opacity=".38"/>
+  <circle cx="124" cy="496" r="22" fill="#5aa7c9" opacity=".3"/>
+  <ellipse cx="400" cy="520" rx="330" ry="66" fill="#c5b8bd"/>
+  
+      <g>
+        <ellipse cx="400" cy="380" rx="262" ry="150" fill="#000" opacity=".12" transform="translate(0 16)"/>
+        <ellipse cx="400" cy="380" rx="262" ry="150" fill="#ffffff"/>
+        <ellipse cx="400" cy="380" rx="228" ry="126" fill="#ffa6e3" opacity=".55"/>
+        <circle cx="292" cy="336" r="58" fill="url(#foodGrad)"/>
+        <circle cx="430" cy="316" r="50" fill="#5aa7c9"/>
+        <circle cx="522" cy="392" r="54" fill="#c03673"/>
+        <circle cx="360" cy="440" r="46" fill="#83d0f2"/>
+        <ellipse cx="452" cy="424" rx="44" ry="28" fill="#ffffff" opacity=".85"/>
+      </g>
+  <rect x="0" y="0" width="800" height="600" fill="url(#vignette)"/>
+</svg>
