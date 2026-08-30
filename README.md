@@ -10,7 +10,7 @@ A complete, front-end-only ordering website for a small-city sweet shop, built w
 
 ### Goal 1 — Peak-hour crowding, order mix-ups and zero visibility
 
-Mahalaxmi Sweets is a busy counter in Rajwada, Indore. Between 5 PM and 8 PM the shop is three-deep at the till, orders get swapped, and the owner has no idea which items actually sell, which offers work, or how long anything takes to prepare.
+Mahalaxmi Sweets is a busy counter in Muzaffarpur,Bihar. Between 5 PM and 8 PM the shop is three-deep at the till, orders get swapped, and the owner has no idea which items actually sell, which offers work, or how long anything takes to prepare.
 
 **What this site does about it**
 
