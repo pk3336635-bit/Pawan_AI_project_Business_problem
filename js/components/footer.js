@@ -50,7 +50,7 @@ export function mountFooter() {
           <span class="brand__mark" aria-hidden="true">MS</span>
           <div>
             <div class="brand__name" style="color:var(--cream-100)">Mahalaxmi Sweets</div>
-            <div class="brand__tag" style="color:var(--brown-200)">Rajwada Main Branch · Indore</div>
+            <div class="brand__tag" style="color:var(--brown-200)">Muzaffarpur</div>
           </div>
         </div>
         <p>
