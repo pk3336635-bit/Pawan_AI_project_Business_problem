@@ -61,7 +61,7 @@ function heroSection(categoryCount, itemCount) {
     <section class="hero">
       <div class="hero__inner">
         <div>
-          <span class="eyebrow"><span aria-hidden="true">✦</span> Since 1984 · Rajwada, Indore</span>
+          <span class="eyebrow"><span aria-hidden="true">✦</span> Since 1984 · Aghoria Bazaar, Muzaffarpur</span>
           <h1>Fresh mithai and hot chai, <em>without the queue</em>.</h1>
           <p class="hero__lede">
             Order from ${number(itemCount)} items across ${categoryCount} counters, reserve a
