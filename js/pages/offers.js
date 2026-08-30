@@ -513,7 +513,7 @@ function buildBulkOrder(values, estimate) {
     statusHistory: [{ status: 'Placed', at: now.toISOString() }],
     channel: 'web',
     deliveryType: 'pickup',
-    address: 'Store pickup — Rajwada Main Branch',
+    address: 'Store pickup — Aghoria Bazaar Branch',
     area: sanitizeText(values.organisation, 80),
     notes: `${sanitizeText(values.organisation, 80)} · ${estimate.packaging.label}${values.notes ? ` · ${sanitizeText(values.notes, 200)}` : ''}`,
     preorderDate: values.preorderDate,
