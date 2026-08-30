@@ -1,0 +1,215 @@
+/* ==========================================================================
+   responsive.css — breakpoints, mobile navigation and print styles
+   Breakpoints: 1100px (laptop) · 900px (tablet) · 640px (phone) · 420px (small)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   <= 1100px — laptops / small desktops
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 1100px) {
+  .hero__inner { gap: var(--sp-6); }
+
+  .split-layout { grid-template-columns: minmax(0, 1fr) 320px; }
+
+  .menu-layout { grid-template-columns: 210px minmax(0, 1fr); gap: var(--sp-4); }
+
+  .footer__inner { grid-template-columns: 1.4fr 1fr 1fr; }
+  .footer__inner > :nth-child(4) { grid-column: 1 / -1; }
+
+  .steps { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* --------------------------------------------------------------------------
+   <= 960px — tablets
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 960px) {
+  :root { --header-h: 64px; }
+
+  .nav__links {
+    position: fixed;
+    inset: calc(var(--topbar-h) + var(--header-h)) 0 auto;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--sh-md);
+    padding: var(--sp-3);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: max-height var(--t-base) var(--ease), opacity var(--t-base) var(--ease), padding var(--t-base) var(--ease);
+  }
+
+  .nav__links.is-open {
+    max-height: 78vh;
+    overflow-y: auto;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav__link { padding: 0.75rem 0.9rem; border-radius: var(--r-md); font-size: var(--fs-base); }
+
+  .nav__toggle { display: inline-flex; order: 3; }
+
+  .nav__actions { order: 2; }
+
+  .brand__tag { display: none; }
+
+  .hero__inner { grid-template-columns: 1fr; padding-block: var(--sp-6) var(--sp-6); }
+  .hero__art { max-width: 520px; }
+  .hero__badge { position: static; margin-top: var(--sp-4); }
+
+  .split-layout { grid-template-columns: minmax(0, 1fr); }
+
+  .split-layout > :nth-child(2) { position: static; }
+
+  .menu-layout { grid-template-columns: minmax(0, 1fr); }
+  .menu-sidebar { display: none; }
+
+  .stat-strip { grid-template-columns: repeat(2, 1fr); gap: var(--sp-5); }
+
+  .grid--3, .grid--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+  .funnel__step { grid-template-columns: 110px 1fr auto; font-size: var(--fs-xs); }
+}
+
+/* --------------------------------------------------------------------------
+   <= 720px — large phones
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 720px) {
+  .container { padding-inline: var(--sp-4); }
+
+  .section { padding-block: var(--sp-6); }
+
+  h1 { font-size: clamp(1.75rem, 7vw, 2.3rem); }
+  h2 { font-size: clamp(1.4rem, 5.6vw, 1.8rem); }
+  h3 { font-size: var(--fs-lg); }
+
+  .topbar__inner { padding-inline: var(--sp-4); }
+  .topbar__list li:not(:first-child) { display: none; }
+
+  .nav { padding-inline: var(--sp-4); gap: var(--sp-2); }
+
+  /* Keep the hamburger on screen: shrink the brand, drop the cart label. */
+  .brand { min-width: 0; flex-shrink: 1; }
+  .brand__text { min-width: 0; overflow: hidden; }
+  .brand__name {
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .cart-button { padding: 0.5rem 0.7rem; }
+  .cart-button__label { display: none; }
+
+  .grid--cards { grid-template-columns: repeat(auto-fill, minmax(158px, 1fr)); gap: var(--sp-3); }
+
+  .form-grid { grid-template-columns: minmax(0, 1fr); }
+
+  .grid--2 { grid-template-columns: minmax(0, 1fr); }
+
+  .footer__inner { grid-template-columns: repeat(2, 1fr); gap: var(--sp-5); padding-block: var(--sp-6) var(--sp-4); }
+  .footer__inner > :first-child { grid-column: 1 / -1; }
+
+  .steps { grid-template-columns: 1fr; }
+
+  .menu-toolbar__inner { padding-inline: var(--sp-4); }
+
+  .coupon__side { flex-basis: 62px; font-size: var(--fs-base); }
+
+  .cart-line { grid-template-columns: 62px minmax(0, 1fr); }
+  .cart-line__img { width: 62px; height: 54px; }
+  .cart-line__side { grid-column: 1 / -1; flex-direction: row; justify-content: space-between; align-items: center; }
+
+  .panel { padding: var(--sp-4); }
+  .panel-grid { grid-template-columns: minmax(0, 1fr); }
+
+  .heatmap { grid-template-columns: 42px repeat(14, minmax(0, 1fr)); gap: 2px; font-size: 0.5rem; }
+
+  .modal__head, .modal__body, .modal__foot { padding-inline: var(--sp-4); }
+
+  .toast-stack { bottom: calc(var(--sp-3) + 74px); }
+
+  /* Sticky cart bar takes over on touch screens */
+  .mobile-cart-bar { display: flex; }
+
+  body.has-cart-bar .site-footer { padding-bottom: 72px; }
+
+  .product-card__quick { opacity: 1; transform: none; }
+
+  .slot-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+
+  .kpi-grid { grid-template-columns: repeat(auto-fit, minmax(158px, 1fr)); gap: var(--sp-3); }
+
+  /* Thumb-friendly hit areas */
+  .btn { padding-block: 0.78rem; }
+  .btn--sm { padding-block: 0.5rem; }
+  .stepper button { width: 34px; height: 34px; }
+}
+
+/* --------------------------------------------------------------------------
+   <= 460px — small phones
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 460px) {
+  .grid--cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--sp-3); }
+  .grid--3, .grid--4 { grid-template-columns: minmax(0, 1fr); }
+
+  .product-card__body { padding: var(--sp-3); }
+  .product-card__desc { display: none; }
+  .product-card__title { font-size: var(--fs-sm); min-height: 2.7em; }
+
+  .stat-strip { padding: var(--sp-4); }
+  .stat-strip__item b { font-size: var(--fs-xl); }
+
+  .hero__trust { gap: var(--sp-4); }
+  .hero__cta .btn { flex: 1 1 100%; }
+
+  .kpi-grid { grid-template-columns: minmax(0, 1fr); }
+
+  .footer__inner { grid-template-columns: 1fr; }
+
+  .receipt__id { flex-direction: column; align-items: flex-start; }
+
+  .cart-drawer { width: 100vw; }
+}
+
+/* --------------------------------------------------------------------------
+   Hover-capable pointers only
+   -------------------------------------------------------------------------- */
+
+@media (hover: none) {
+  .product-card:hover { transform: none; }
+  .category-tile:hover { transform: none; }
+  .coupon:hover { transform: none; }
+}
+
+/* --------------------------------------------------------------------------
+   Print — receipts and certificates
+   -------------------------------------------------------------------------- */
+
+@media print {
+  .topbar,
+  .site-header,
+  .site-footer,
+  .mobile-cart-bar,
+  .cart-drawer,
+  .scrim,
+  .toast-stack,
+  .no-print { display: none !important; }
+
+  body { background: #fff; }
+
+  .receipt,
+  .cert-card {
+    box-shadow: none;
+    border: 1px solid #ccc;
+    break-inside: avoid;
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "promoCodes": [
+    {
+      "code": "SWEET10",
+      "title": "10% off your whole order",
+      "description": "Flat 10% off on every category. The easiest way to try something new.",
+      "type": "percent",
+      "value": 10,
+      "minOrderValue": 299,
+      "maxDiscount": 100,
+      "appliesTo": "all",
+      "validFrom": "2025-04-01",
+      "validTill": "2027-03-31",
+      "active": true,
+      "badge": "Most used",
+      "accent": "orange",
+      "terms": [
+        "Valid on orders above ₹299",
+        "Maximum discount ₹100",
+        "Cannot be combined with other coupons"
+      ]
+    },
+    {
+      "code": "FESTIVE20",
+      "title": "20% off festival packs",
+      "description": "Diwali, Rakhi, Ganesh and Holi hampers — book early, save more.",
+      "type": "percent",
+      "value": 20,
+      "minOrderValue": 799,
+      "maxDiscount": 250,
+      "appliesTo": "festival",
+      "validFrom": "2025-08-01",
+      "validTill": "2027-01-31",
+      "active": true,
+      "badge": "Festival",
+      "accent": "red",
+      "terms": [
+        "Applies only to items marked Festival Special",
+        "Minimum cart value ₹799",
+        "Maximum discount ₹250",
+        "Preorder slot must be selected"
+      ]
+    },
+    {
+      "code": "STUDENT50",
+      "title": "₹50 off for hostellers",
+      "description": "Built for the 4 PM break. Show your college ID at pickup.",
+      "type": "flat",
+      "value": 50,
+      "minOrderValue": 249,
+      "maxDiscount": 50,
+      "appliesTo": "all",
+      "validFrom": "2025-06-01",
+      "validTill": "2027-06-30",
+      "active": true,
+      "badge": "Campus",
+      "accent": "green",
+      "terms": [
+        "Minimum cart value ₹249",
+        "One use per phone number per day",
+        "Carry a valid student ID for pickup orders"
+      ]
+    },
+    {
+      "code": "FIRSTBITE",
+      "title": "15% off your first order",
+      "description": "New at Mahalaxmi? Here is a warm welcome from our kitchen.",
+      "type": "percent",
+      "value": 15,
+      "minOrderValue": 199,
+      "maxDiscount": 120,
+      "appliesTo": "all",
+      "validFrom": "2025-01-01",
+      "validTill": "2027-12-31",
+      "active": true,
+      "badge": "New here",
+      "accent": "orange",
+      "terms": [
+        "Valid once per customer",
+        "Minimum cart value ₹199",
+        "Maximum discount ₹120"
+      ]
+    },
+    {
+      "code": "CHAI25",
+      "title": "₹25 off beverages",
+      "description": "Kadak chai, filter coffee, thandai — your break just got cheaper.",
+      "type": "flat",
+      "value": 25,
+      "minOrderValue": 149,
+      "maxDiscount": 25,
+      "appliesTo": "category:beverages",
+      "validFrom": "2025-05-01",
+      "validTill": "2027-04-30",
+      "active": true,
+      "badge": "Beverages",
+      "accent": "brown",
+      "terms": [
+        "Cart must contain at least one beverage",
+        "Minimum cart value ₹149"
+      ]
+    },
+    {
+      "code": "PICKUP40",
+      "title": "₹40 off on store pickup",
+      "description": "Skip the delivery fee, skip the queue. Pick a slot and walk in.",
+      "type": "flat",
+      "value": 40,
+      "minOrderValue": 499,
+      "maxDiscount": 40,
+      "appliesTo": "pickup",
+      "validFrom": "2025-07-01",
+      "validTill": "2027-09-30",
+      "active": true,
+      "badge": "Pickup only",
+      "accent": "green",
+      "terms": [
+        "Delivery type must be set to Store pickup",
+        "Minimum cart value ₹499",
+        "Preorder slot required"
+      ]
+    },
+    {
+      "code": "BULK15",
+      "title": "15% off bulk & corporate orders",
+      "description": "Weddings, offices, hostel messes — 15% off on carts above ₹2,999.",
+      "type": "percent",
+      "value": 15,
+      "minOrderValue": 2999,
+      "maxDiscount": 800,
+      "appliesTo": "bulk",
+      "validFrom": "2025-02-01",
+      "validTill": "2027-12-31",
+      "active": true,
+      "badge": "Bulk",
+      "accent": "brown",
+      "terms": [
+        "Minimum cart value ₹2,999",
+        "Maximum discount ₹800",
+        "48 hours notice required for quantities above 25 kg",
+        "GST invoice provided on request"
+      ]
+    },
+    {
+      "code": "HOLI30",
+      "title": "30% off Holi thandai & gujiya",
+      "description": "Our Holi 2026 campaign. Kept here so you can see how expiry works.",
+      "type": "percent",
+      "value": 30,
+      "minOrderValue": 499,
+      "maxDiscount": 300,
+      "appliesTo": "festival",
+      "validFrom": "2026-02-20",
+      "validTill": "2026-03-10",
+      "active": false,
+      "badge": "Expired",
+      "accent": "muted",
+      "terms": [
+        "Campaign closed on 10 March 2026",
+        "Shown as an example of coupon expiry validation"
+      ]
+    }
+  ],
+  "banners": [
+    {
+      "id": "BN-01",
+      "title": "Ganesh Chaturthi preorders are open",
+      "subtitle": "Ukadiche Modak thalis, festival hampers and bulk trays. Slots fill fast.",
+      "cta": "Book a slot",
+      "route": "#/menu?category=combos",
+      "imageKey": "ganesh-modak",
+      "accent": "orange"
+    },
+    {
+      "id": "BN-02",
+      "title": "Beat the 6 PM queue",
+      "subtitle": "Preorder for a 30-minute window and walk straight to the pickup counter.",
+      "cta": "Preorder now",
+      "route": "#/checkout",
+      "imageKey": "snack-tea-combo",
+      "accent": "green"
+    },
+    {
+      "id": "BN-03",
+      "title": "Student Saver Combo at ₹99",
+      "subtitle": "Poha + samosa + kadak chai. The most ordered combo on campus.",
+      "cta": "Grab the combo",
+      "route": "#/menu?q=Student%20Saver",
+      "imageKey": "student-combo",
+      "accent": "brown"
+    }
+  ],
+  "bulkTiers": [
+    { "id": "T1", "label": "5 – 9 kg", "minKg": 5, "maxKg": 9, "discountPercent": 5, "leadTimeHours": 12 },
+    { "id": "T2", "label": "10 – 24 kg", "minKg": 10, "maxKg": 24, "discountPercent": 10, "leadTimeHours": 24 },
+    { "id": "T3", "label": "25 – 49 kg", "minKg": 25, "maxKg": 49, "discountPercent": 14, "leadTimeHours": 48 },
+    { "id": "T4", "label": "50 kg and above", "minKg": 50, "maxKg": 500, "discountPercent": 18, "leadTimeHours": 72 }
+  ],
+  "packagingOptions": [
+    { "id": "P1", "label": "Standard food-grade box", "pricePerKg": 0, "note": "Included" },
+    { "id": "P2", "label": "Premium gift box with ribbon", "pricePerKg": 45, "note": "Recommended for gifting" },
+    { "id": "P3", "label": "Branded corporate box", "pricePerKg": 80, "note": "Add your company logo" },
+    { "id": "P4", "label": "Eco kraft tray", "pricePerKg": 25, "note": "100% recyclable" }
+  ],
+  "festivals": [
+    { "name": "Ganesh Chaturthi", "date": "2026-09-14", "combo": "ganesh-modak" },
+    { "name": "Navratri", "date": "2026-10-11", "combo": "festival-pack" },
+    { "name": "Diwali", "date": "2026-11-08", "combo": "diwali-special" },
+    { "name": "Bhai Dooj", "date": "2026-11-11", "combo": "gift-hamper" },
+    { "name": "Makar Sankranti", "date": "2027-01-14", "combo": "sweet-box" },
+    { "name": "Holi", "date": "2027-03-23", "combo": "holi-special" }
+  ]
+}

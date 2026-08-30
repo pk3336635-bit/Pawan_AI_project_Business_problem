@@ -1,0 +1,140 @@
+/* ==========================================================================
+   variables.css — design tokens for Mahalaxmi Sweets
+   Cream & white surfaces, dark-brown ink, orange CTAs, green accents.
+   ========================================================================== */
+
+:root {
+  /* ---- Brand palette ---------------------------------------------------- */
+  --brown-900: #2e1a0e;
+  --brown-800: #3d2413;
+  --brown-700: #4a2c18;
+  --brown-600: #5f3b23;
+  --brown-500: #7a5335;
+  --brown-400: #9a7355;
+  --brown-300: #bb9b7f;
+  --brown-200: #dcc6b0;
+  --brown-100: #efe0d0;
+
+  --orange-700: #b8420f;
+  --orange-600: #d4551a;
+  --orange-500: #e2621f;
+  --orange-400: #f2872f;
+  --orange-300: #f6a821;
+  --orange-200: #fcd39a;
+  --orange-100: #fdeacd;
+
+  --green-700: #1f6b3a;
+  --green-600: #2a8248;
+  --green-500: #34a05a;
+  --green-200: #b8e5c8;
+  --green-100: #e4f6ea;
+
+  --red-600: #c0392b;
+  --red-500: #e05543;
+  --red-100: #fde8e5;
+
+  --blue-500: #2f6fb0;
+  --blue-100: #e3eefa;
+
+  --gold-500: #c9942f;
+
+  /* ---- Surfaces --------------------------------------------------------- */
+  --cream-50: #fffdf9;
+  --cream-100: #fdf7ee;
+  --cream-200: #f8efe1;
+  --cream-300: #f1e3cf;
+
+  --bg: var(--cream-100);
+  --bg-alt: var(--cream-200);
+  --surface: #ffffff;
+  --surface-muted: var(--cream-50);
+  --border: #ecdfcc;
+  --border-strong: #ddc9ae;
+
+  /* ---- Ink -------------------------------------------------------------- */
+  --ink: var(--brown-800);
+  --ink-soft: var(--brown-500);
+  --ink-muted: var(--brown-400);
+  --ink-invert: #fffdf9;
+
+  /* ---- Semantic --------------------------------------------------------- */
+  --primary: var(--orange-500);
+  --primary-hover: var(--orange-600);
+  --primary-soft: var(--orange-100);
+  --success: var(--green-600);
+  --success-soft: var(--green-100);
+  --danger: var(--red-500);
+  --danger-soft: var(--red-100);
+  --info: var(--blue-500);
+  --info-soft: var(--blue-100);
+
+  /* ---- Typography ------------------------------------------------------- */
+  --font-body: 'Poppins', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-display: 'Fraunces', 'Poppins', Georgia, serif;
+
+  --fs-xs: 0.72rem;
+  --fs-sm: 0.82rem;
+  --fs-base: 0.94rem;
+  --fs-md: 1.05rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.6rem;
+  --fs-2xl: 2.1rem;
+  --fs-3xl: 2.9rem;
+  --fs-4xl: 3.6rem;
+
+  /* ---- Spacing ---------------------------------------------------------- */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4rem;
+  --sp-9: 6rem;
+
+  /* ---- Radius ----------------------------------------------------------- */
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-xl: 28px;
+  --r-pill: 999px;
+
+  /* ---- Elevation -------------------------------------------------------- */
+  --sh-xs: 0 1px 2px rgba(74, 44, 24, 0.06);
+  --sh-sm: 0 2px 8px rgba(74, 44, 24, 0.07);
+  --sh-md: 0 8px 24px rgba(74, 44, 24, 0.09);
+  --sh-lg: 0 18px 44px rgba(74, 44, 24, 0.14);
+  --sh-focus: 0 0 0 3px rgba(226, 98, 31, 0.32);
+
+  /* ---- Motion ----------------------------------------------------------- */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-out-back: cubic-bezier(0.34, 1.4, 0.64, 1);
+  --t-fast: 140ms;
+  --t-base: 240ms;
+  --t-slow: 420ms;
+
+  /* ---- Layout ----------------------------------------------------------- */
+  --container: 1220px;
+  --container-narrow: 880px;
+  --header-h: 72px;
+  --topbar-h: 34px;
+}
+
+/* Respect users who prefer less motion. */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --t-fast: 0ms;
+    --t-base: 0ms;
+    --t-slow: 0ms;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
