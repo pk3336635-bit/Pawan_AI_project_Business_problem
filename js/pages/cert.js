@@ -27,7 +27,7 @@ const CERTIFICATES = [
     number: 'FSMS/IN/2025/40871',
     issued: '2025-06-18',
     expires: '2028-06-17',
-    scope: 'Central kitchen, cold room and packing line at Rajwada branch',
+    scope: 'Central kitchen, cold room and packing line at Aghoria Bazaar branch',
   },
   {
     seal: '🥛',
@@ -41,11 +41,11 @@ const CERTIFICATES = [
   {
     seal: '🏛️',
     title: 'Shop & Establishment',
-    issuer: 'Indore Municipal Corporation',
+    issuer: 'Muzaffarpur Municipal Corporation',
     number: 'IMC/SE/2024/55210',
     issued: '2024-02-14',
     expires: '2027-02-13',
-    scope: '14, Rajwada Chowk — retail counter and seating area',
+    scope: '14, Aghoria Bazaar  — retail counter and seating area',
   },
   {
     seal: '🧾',
