@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="80 60 640 480" width="640" height="480" role="img" aria-label="samosa">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff8e8"/>
+      <stop offset="100%" stop-color="#dcd2c2"/>
+    </linearGradient>
+    <radialGradient id="foodGrad" cx="35%" cy="28%" r="78%">
+      <stop offset="0%" stop-color="#ffdc90"/>
+      <stop offset="60%" stop-color="#e2ae62"/>
+      <stop offset="100%" stop-color="#be8a3e"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx="50%" cy="45%" r="72%">
+      <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#3a2417" stop-opacity=".22"/>
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="800" height="600" fill="url(#bgGrad)"/>
+  <circle cx="128" cy="122" r="52" fill="#ffffff" opacity=".38"/>
+  <circle cx="692" cy="162" r="30" fill="#ffffff" opacity=".3"/>
+  <circle cx="648" cy="96" r="14" fill="#8a5a22" opacity=".38"/>
+  <circle cx="124" cy="496" r="22" fill="#8a5a22" opacity=".3"/>
+  <ellipse cx="400" cy="520" rx="330" ry="66" fill="#c5bbab"/>
+  
+      <g transform="translate(316 356) rotate(-8) scale(0.95)">
+        <path d="M0 -92 L104 78 L-104 78 Z" fill="#000" opacity=".12" transform="translate(0 16)"/>
+        <path d="M0 -92 L104 78 L-104 78 Z" fill="url(#foodGrad)" stroke="#b48034" stroke-width="4" stroke-linejoin="round"/>
+        <path d="M0 -70 L0 66" stroke="#8a5a22" stroke-width="6" opacity=".5" stroke-linecap="round"/>
+        <path d="M-58 40 Q0 62 58 40" stroke="#af7b2f" stroke-width="5" fill="none" opacity=".5" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(506 366) rotate(9) scale(0.86)">
+        <path d="M0 -92 L104 78 L-104 78 Z" fill="#000" opacity=".12" transform="translate(0 16)"/>
+        <path d="M0 -92 L104 78 L-104 78 Z" fill="url(#foodGrad)" stroke="#b48034" stroke-width="4" stroke-linejoin="round"/>
+        <path d="M0 -70 L0 66" stroke="#8a5a22" stroke-width="6" opacity=".5" stroke-linecap="round"/>
+        <path d="M-58 40 Q0 62 58 40" stroke="#af7b2f" stroke-width="5" fill="none" opacity=".5" stroke-linecap="round"/>
+      </g>
+  <rect x="0" y="0" width="800" height="600" fill="url(#vignette)"/>
+</svg>
