@@ -114,7 +114,7 @@ function headerMarkup() {
         <span class="brand__mark" aria-hidden="true">MS</span>
         <span class="brand__text">
           <span class="brand__name">Mahalaxmi Sweets</span>
-          <span class="brand__tag">Since 1984 · Indore</span>
+          <span class="brand__tag">Since 1984 · Muzaffarpur</span>
         </span>
       </a>
 
